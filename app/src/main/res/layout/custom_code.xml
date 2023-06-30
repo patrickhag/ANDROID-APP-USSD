@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingVertical="16dp">
+
+    <EditText
+        android:id="@+id/codeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="?attr/actionBarSize"
+        android:hint="Enter USSD Code Here..."
+        android:textSize="16dp"/>
+    <Button
+        android:id="@+id/runBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/codeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="RUN CODE"
+        android:layout_marginTop="26dp"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginEnd="15dp"/>
+    <TextView
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/codeBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Cancel"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

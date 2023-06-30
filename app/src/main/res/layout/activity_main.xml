@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bd"
+    android:layout_marginVertical="?attr/actionBarSize"
+    android:layout_marginHorizontal="26dp">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="MOMO Operations"
+        android:layout_marginTop="26dp"
+        android:paddingBottom="16dp"
+        android:background="@drawable/_service_border_bottom"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/purple_500"/>
+
+    <TextView
+        android:id="@+id/airtimeBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        android:text="Check Airtime Balance"
+        android:layout_marginTop="10dp"
+        app:drawableStartCompat="@drawable/baseline_check_circle_outline_24"
+        android:drawablePadding="36dp"
+        android:textColor="@color/purple_200"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:padding="8dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/bundleBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/airtimeBalance"
+        android:text="Check Bundle Balance"
+        android:layout_marginTop="5dp"
+        app:drawableStartCompat="@drawable/baseline_check_circle_outline_24"
+        android:drawablePadding="36dp"
+        android:textColor="@color/purple_200"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:padding="8dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/MobileMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/bundleBalance"
+        android:text="Mobile Money"
+        android:layout_marginTop="5dp"
+        app:drawableStartCompat="@drawable/baseline_check_circle_outline_24"
+        android:drawablePadding="36dp"
+        android:textColor="@color/purple_200"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:padding="8dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/openCuster0inlogBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/MobileMoney"
+        android:text="A Custom USSD Code"
+        android:layout_marginTop="5dp"
+        app:drawableStartCompat="@drawable/baseline_check_circle_outline_24"
+        android:drawablePadding="36dp"
+        android:textColor="@color/purple_200"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:padding="8dp"
+        android:textStyle="bold"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
